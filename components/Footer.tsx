@@ -27,7 +27,12 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center gap-14">
           {/* logo */}
           <Link href="/" className="relative w-[120px] h-[50px] mx-auto">
-            <Image src="/assets/logo.svg" fill alt="" className="object-contain" />
+            <Image
+              src="/assets/logo.svg"
+              fill
+              alt=""
+              className="object-contain"
+            />
           </Link>
           {/* nav */}
           <nav className="flex flex-col xl:flex-row gap-8 xl:gap-12 justify-center items-center">
@@ -55,7 +60,9 @@ const Footer = () => {
           </ul>
           {/* copyright */}
           <div className="border-t border-white/10 text-[15px] text-white/70 font-light w-full flex items-center justify-center py-6">
-            <p>&copy; Copyright 2024 - Zenbrew. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} - Zenbrew. All rights reserved.
+            </p>
           </div>
         </div>
       </div>
